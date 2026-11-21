@@ -165,7 +165,16 @@ IF(
 
 Findings for **3/29/2021 – 6/25/2021**:
 
-- **
+Findings for the period **3/29/2021 – 6/25/2021**:
+
+- **The market declined overall.** Average open and close prices dropped from roughly $6K in April to about $4K by late June. Across all assets, the average daily return was slightly negative (−0.55%).
+- **Volume peaked in May.** It surged to about $0.3T, then tapered off through June. In the monthly view, volume and volatility were both highest in May and lowest in March.
+- **Bitcoin led in volume:** about $5.0T of the $12.1T total. Ethereum followed, at about $3.28T.
+- **Just three assets ended with a positive average daily return:** Polkadot (0.52), Bitcoin (0.52), and Litecoin (0.11).
+- **Dogecoin (Ð) stood out for risk.** Its volatility was highest, at about 25%, and its average daily return was worst (−3.15%). Bitcoin was least volatile at about 8%, followed by Ethereum at about 12%.
+- **Higher volatility brought no greater returns** during this period; the risk map shows no upward relationship between volatility and return.
+- **Most assets moved together.** Correlations among ADA, BNB, BTC, DOT, ETH, and LTC were mostly between 0.7 and 0.86. Ethereum–Polkadot, Polkadot–Litecoin, and Bitcoin Cash–Litecoin were among the highest.
+- **Best diversifiers:** Dogecoin and Solana had the lowest correlations with the rest of the group. Dogecoin’s correlations were as low as 0.22 with Solana and XRP.
 
   ---
 
