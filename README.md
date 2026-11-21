@@ -141,13 +141,21 @@ Calculated fields in the model include:
 - **Top Volume Symbol** (`Sheet1`)
 - **Correlation Coeff** (`Symbolist`)
 
-_Replace the example below with your actual DAX:_
 
 ```dax
-7day rolling average =
-AVERAGEX(
-    DATESINPERIOD(DateTable[DATE], MAX(DateTable[DATE]), -7, DAY),
-    CALCULATE(AVERAGE(Sheet1[Daily Return(%)]))
+IF(
+	ISFILTERED('DateTable'[DATE]),
+	ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+	VAR __LAST_DATE = LASTDATE('DateTable'[DATE].[Date])
+	RETURN
+		AVERAGEX(
+			DATESBETWEEN(
+				'DateTable'[DATE].[Date],
+				DATEADD(__LAST_DATE, -6, DAY),
+				__LAST_DATE
+			),
+			CALCULATE(AVERAGE('Sheet1'[Daily Return(%)]))
+		)
 )
 ```
 
